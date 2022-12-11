@@ -1,0 +1,22 @@
+<div style="text-align:center;">
+    <h2> Login</h2>
+    <form [formGroup]="signInForm" (ngSubmit)="submit()">
+      <div style="margin-top:20px">
+        <label for="email">Email</label>
+        <div>
+          <input type="email" formControlName="username" placeholder="Email" id="email">
+        </div>
+      </div>
+      <br>
+    <div style="margin-top:20px">
+      <label for="password">Password</label>
+      <div class="input-group">
+        <input type="password" formControlName = "password" placeholder="Password" id="password">
+      </div>
+    </div>
+    <br>
+    <div style=" margin-top:20px">
+      <button>Login</button>
+    </div>
+    </form>
+</div>
